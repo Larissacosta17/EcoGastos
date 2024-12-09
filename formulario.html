@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Perguntas</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="container form-container">
+        <h2>Formulário de Perguntas</h2>
+        <form action="ProcessForm.java" method="POST">
+            <!-- Perguntas Numéricas -->
+            <div class="mb-3">
+                <label for="q1" class="form-label">pergunta 1</label>
+                <input type="number" class="form-control" id="q1" name="q1" required>
+            </div>
+            <div class="mb-3">
+                <label for="q2" class="form-label">pergunta 2</label>
+                <input type="number" class="form-control" id="q2" name="q2" required>
+            </div>
+            <div class="mb-3">
+                <label for="q3" class="form-label">pergunta 3</label>
+                <input type="number" class="form-control" id="q3" name="q3" required>
+            </div>
+            <div class="mb-3">
+                <label for="q4" class="form-label">pergunta 4</label>
+                <input type="number" class="form-control" id="q4" name="q4" required>
+            </div>
+            <div class="mb-3">
+                <label for="q5" class="form-label">pergunta 5</label>
+                <input type="number" class="form-control" id="q5" name="q5" required>
+            </div>
+
+            <!-- Perguntas de Múltipla Escolha -->
+            <div class="mb-3">
+                <label class="form-label">pergunta 6</label>
+                <div class="form-check">
+                    <input type="radio" id="q6a" name="q6" value="Indoor" class="form-check-input" required>
+                    <label for="q6a" class="form-check-label">resposta 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q6b" name="q6" value="Outdoor" class="form-check-input" required>
+                    <label for="q6b" class="form-check-label">resposta 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q6c" name="q6" value="Ambos" class="form-check-input" required>
+                    <label for="q6c" class="form-check-label">resposta 3</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">pergunta 7</label>
+                <div class="form-check">
+                    <input type="radio" id="q7a" name="q7" value="Azul" class="form-check-input" required>
+                    <label for="q7a" class="form-check-label">resposta 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q7b" name="q7" value="Vermelho" class="form-check-input" required>
+                    <label for="q7b" class="form-check-label">resposta 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q7c" name="q7" value="Verde" class="form-check-input" required>
+                    <label for="q7c" class="form-check-label">resposta 3</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">pergunta 8</label>
+                <div class="form-check">
+                    <input type="radio" id="q8a" name="q8" value="Verão" class="form-check-input" required>
+                    <label for="q8a" class="form-check-label">resposta 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q8b" name="q8" value="Inverno" class="form-check-input" required>
+                    <label for="q8b" class="form-check-label">resposta 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q8c" name="q8" value="Outono" class="form-check-input" required>
+                    <label for="q8c" class="form-check-label">resposta 3</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">pergunta 9</label>
+                <div class="form-check">
+                    <input type="radio" id="q9a" name="q9" value="Leitura" class="form-check-input" required>
+                    <label for="q9a" class="form-check-label">resposta 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q9b" name="q9" value="Esportes" class="form-check-input" required>
+                    <label for="q9b" class="form-check-label">resposta 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q9c" name="q9" value="Música" class="form-check-input" required>
+                    <label for="q9c" class="form-check-label">resposta 3</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">pergunta 10</label>
+                <div class="form-check">
+                    <input type="radio" id="q10a" name="q10" value="Comédia" class="form-check-input" required>
+                    <label for="q10a" class="form-check-label">resposta 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q10b" name="q10" value="Drama" class="form-check-input" required>
+                    <label for="q10b" class="form-check-label">resposta 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" id="q10c" name="q10" value="Aventura" class="form-check-input" required>
+                    <label for="q10c" class="form-check-label">resposta 3</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-4">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
